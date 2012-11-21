@@ -1,12 +1,4 @@
-Description
-===========
+chef-apache2-mod_log_firstbyte
+==============================
 
-Requirements
-============
-
-Attributes
-==========
-
-Usage
-=====
-
+Chef Cookbook installing Googles apache mod_log_firstbyte
