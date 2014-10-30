@@ -52,7 +52,7 @@ unless File.exists?("#{node[:apache][:libexec_dir]}/mod_log_firstbyte.so")
 
   execute "install mod_log_firstbyte" do
     command "cd #{checkout_path} && /usr/bin/apxs2 -i -a mod_log_firstbyte.la"
-    creates ::File.join(node[:apache][:libexecdir], "mod_log_firstbyte.so")
+    creates ::File.join(node[:apache][:libexec_dir], "mod_log_firstbyte.so")
     action :run
   end
 
