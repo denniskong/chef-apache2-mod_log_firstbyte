@@ -1,3 +1,4 @@
+name             "apache2-mod_log_firstbyte"
 maintainer       "Dennis Kong"
 maintainer_email "ko.de.r.de@gmail.com"
 license          "MIT"
