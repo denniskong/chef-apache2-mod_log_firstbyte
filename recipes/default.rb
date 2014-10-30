@@ -33,7 +33,7 @@ directory source_dir do
   action :create
 end
 
-unless File.exists?("#{node[:apache][:libexecdir]}/mod_log_firstbyte.so")
+unless File.exists?("#{node[:apache][:libexec_dir]}/mod_log_firstbyte.so")
 
   subversion "mod_log_firstbyte" do
     repository mod_log_firstbyte_repo
