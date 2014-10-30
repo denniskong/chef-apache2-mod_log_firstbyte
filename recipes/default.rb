@@ -27,7 +27,7 @@ include_recipe "apache2"
 include_recipe "subversion"
 source_dir = "/usr/local/src"
 checkout_path = ::File.join(source_dir, "mod_log_firstbyte")
-mod_log_firstbyte_repo = node['mod_log_firstbyte']['repository']
+mod_log_firstbyte_repo = node['apache2-mod_log_firstbyte']['repository']
 
 directory source_dir do
   action :create
